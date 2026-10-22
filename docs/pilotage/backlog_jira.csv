@@ -1,0 +1,15 @@
+Summary,Issue Type,Priority,Labels,Story Points,Status,Description
+Importer le scan laser de l'atelier pilote,Story,High,donnees,5,Done,"En tant que responsable des données, je charge l'export du scan et j'obtiens un nuage réduit au budget du terminal."
+Saisir les boîtes des équipements à partir du nuage,Story,High,donnees,3,Done,"Repère, nom, position, dimensions et énergies de chaque équipement."
+Calculer MTBF MTTR disponibilité depuis l'export GMAO,Story,High,donnees;gmao,5,Done,"Indicateurs sur 12 mois glissants, OT ouverts, prochaine préventive."
+Afficher l'état des équipements par couleur,Story,High,ihm,2,Done,"Vert, orange, rouge selon les seuils validés avec les chefs d'atelier."
+Rechercher un équipement par repère ou par nom,Story,Medium,ihm,2,Done,
+Dérouler une procédure pas à pas avec consignation,Story,High,procedures;securite,8,Done,"Refus de publication si une étape travaille sur une énergie non consignée."
+Mesurer une distance dans le nuage,Story,Medium,ihm,3,Done,
+Exporter un journal de session anonyme,Story,High,evaluation,3,Done,"Équipements ouverts, durées par étape, mesures."
+Mode RV et maquette RA au 1:10,Story,Medium,xr,5,Done,"Boutons visibles seulement si le navigateur prend en charge WebXR."
+Tester les modes RV et RA sur le casque du site,Task,High,xr,3,To Do,"Non testé dans le dépôt : à faire sur le matériel du site."
+Rédiger le guide utilisateur et le support de formation 1 h,Story,High,adoption,3,Done,
+Mener l'essai comparatif sur 2 à 4 semaines,Epic,High,evaluation,13,To Do,"Protocole dans docs/protocole_evaluation.md."
+Rédiger le rapport d'évaluation et la recommandation,Story,High,evaluation,5,To Do,
+Brancher l'extraction GMAO planifiée,Story,Low,gmao,8,To Do,"Remplacer le fichier CSV par une extraction quotidienne."

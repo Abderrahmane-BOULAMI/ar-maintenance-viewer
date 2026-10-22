@@ -1,0 +1,17 @@
+{
+  "raw_points": 574664,
+  "web_points": 208407,
+  "voxel_m": 0.0298,
+  "ply_mb": 3.13,
+  "work_orders": 427,
+  "open_orders": 4,
+  "equipment": 8,
+  "procedures": 3,
+  "procedure_steps": 17,
+  "status_count": {
+    "orange": 4,
+    "red": 2,
+    "green": 2
+  },
+  "build_s": 7.7
+}

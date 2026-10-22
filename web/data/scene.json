@@ -1,0 +1,806 @@
+{
+ "title": "Cellule de soudure robotisée (démonstrateur)",
+ "units": "m",
+ "up": "z",
+ "data_as_of": "2026-09-30",
+ "equipment": [
+  {
+   "tag": "R1",
+   "name": "Robot de soudure 1",
+   "kind": "robot",
+   "center": [
+    -1.6,
+    0.8,
+    0.9
+   ],
+   "size": [
+    0.6,
+    0.6,
+    1.8
+   ],
+   "shape": "cyl",
+   "energy": [
+    "electrical"
+   ],
+   "kpis": {
+    "failures_12m": 19,
+    "mtbf_h": 459.5,
+    "mttr_h": 1.52,
+    "availability": 0.9967,
+    "open_orders": 1,
+    "last_preventive": "2026-09-28",
+    "next_preventive": "2026-10-19",
+    "top_modes": [
+     {
+      "mode": "Défaut codeur",
+      "count": 8
+     },
+     {
+      "mode": "Collision",
+      "count": 5
+     },
+     {
+      "mode": "Faisceau de câbles",
+      "count": 4
+     }
+    ],
+    "status": "orange"
+   },
+   "history": [
+    {
+     "wo": 100423,
+     "date": "2026-09-30",
+     "type": "CORRECTIVE",
+     "status": "OPEN",
+     "description": "Buse colmatée sur robot de soudure 1"
+    },
+    {
+     "wo": 100071,
+     "date": "2026-09-28",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive robot de soudure 1"
+    },
+    {
+     "wo": 100036,
+     "date": "2026-09-10",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Tube contact usé sur robot de soudure 1"
+    },
+    {
+     "wo": 100070,
+     "date": "2026-09-07",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive robot de soudure 1"
+    },
+    {
+     "wo": 100069,
+     "date": "2026-08-17",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive robot de soudure 1"
+    }
+   ]
+  },
+  {
+   "tag": "R2",
+   "name": "Robot de soudure 2",
+   "kind": "robot",
+   "center": [
+    1.6,
+    0.8,
+    0.9
+   ],
+   "size": [
+    0.6,
+    0.6,
+    1.8
+   ],
+   "shape": "cyl",
+   "energy": [
+    "electrical"
+   ],
+   "kpis": {
+    "failures_12m": 27,
+    "mtbf_h": 322.9,
+    "mttr_h": 1.51,
+    "availability": 0.9953,
+    "open_orders": 0,
+    "last_preventive": "2026-09-29",
+    "next_preventive": "2026-10-20",
+    "top_modes": [
+     {
+      "mode": "Collision",
+      "count": 8
+     },
+     {
+      "mode": "Défaut codeur",
+      "count": 6
+     },
+     {
+      "mode": "Buse colmatée",
+      "count": 6
+     }
+    ],
+    "status": "red"
+   },
+   "history": [
+    {
+     "wo": 100147,
+     "date": "2026-09-29",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive robot de soudure 2"
+    },
+    {
+     "wo": 100112,
+     "date": "2026-09-29",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Faisceau de câbles sur robot de soudure 2"
+    },
+    {
+     "wo": 100111,
+     "date": "2026-09-20",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Buse colmatée sur robot de soudure 2"
+    },
+    {
+     "wo": 100110,
+     "date": "2026-09-09",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Défaut codeur sur robot de soudure 2"
+    },
+    {
+     "wo": 100146,
+     "date": "2026-09-09",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive robot de soudure 2"
+    }
+   ]
+  },
+  {
+   "tag": "TT1",
+   "name": "Table tournante",
+   "kind": "positioner",
+   "center": [
+    0.0,
+    0.9,
+    0.45
+   ],
+   "size": [
+    1.6,
+    1.6,
+    0.9
+   ],
+   "shape": "cyl",
+   "energy": [
+    "electrical",
+    "pneumatic"
+   ],
+   "kpis": {
+    "failures_12m": 5,
+    "mtbf_h": 1750.5,
+    "mttr_h": 1.48,
+    "availability": 0.9992,
+    "open_orders": 0,
+    "last_preventive": "2026-09-23",
+    "next_preventive": "2026-11-04",
+    "top_modes": [
+     {
+      "mode": "Fuite pneumatique",
+      "count": 3
+     },
+     {
+      "mode": "Défaut variateur",
+      "count": 1
+     },
+     {
+      "mode": "Capteur de position",
+      "count": 1
+     }
+    ],
+    "status": "green"
+   },
+   "history": [
+    {
+     "wo": 100178,
+     "date": "2026-09-23",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive table tournante"
+    },
+    {
+     "wo": 100177,
+     "date": "2026-08-12",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive table tournante"
+    },
+    {
+     "wo": 100160,
+     "date": "2026-07-05",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Fuite pneumatique sur table tournante"
+    },
+    {
+     "wo": 100176,
+     "date": "2026-07-02",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive table tournante"
+    },
+    {
+     "wo": 100159,
+     "date": "2026-05-29",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Fuite pneumatique sur table tournante"
+    }
+   ]
+  },
+  {
+   "tag": "CV1",
+   "name": "Convoyeur d'entrée",
+   "kind": "conveyor",
+   "center": [
+    0.0,
+    -1.8,
+    0.45
+   ],
+   "size": [
+    5.0,
+    0.8,
+    0.9
+   ],
+   "shape": "box",
+   "energy": [
+    "electrical"
+   ],
+   "kpis": {
+    "failures_12m": 27,
+    "mtbf_h": 323.4,
+    "mttr_h": 1.08,
+    "availability": 0.9967,
+    "open_orders": 0,
+    "last_preventive": "2026-09-17",
+    "next_preventive": "2026-10-07",
+    "top_modes": [
+     {
+      "mode": "Bande déportée",
+      "count": 10
+     },
+     {
+      "mode": "Capteur présence pièce",
+      "count": 8
+     },
+     {
+      "mode": "Roulement",
+      "count": 7
+     }
+    ],
+    "status": "red"
+   },
+   "history": [
+    {
+     "wo": 100234,
+     "date": "2026-09-20",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Moteur sur convoyeur d'entrée"
+    },
+    {
+     "wo": 100269,
+     "date": "2026-09-17",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive convoyeur d'entrée"
+    },
+    {
+     "wo": 100233,
+     "date": "2026-09-16",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Capteur présence pièce sur convoyeur d'entrée"
+    },
+    {
+     "wo": 100268,
+     "date": "2026-08-27",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive convoyeur d'entrée"
+    },
+    {
+     "wo": 100232,
+     "date": "2026-08-25",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Bande déportée sur convoyeur d'entrée"
+    }
+   ]
+  },
+  {
+   "tag": "HPU",
+   "name": "Centrale hydraulique de bridage",
+   "kind": "hydraulic",
+   "center": [
+    -3.4,
+    -0.4,
+    0.6
+   ],
+   "size": [
+    1.0,
+    0.8,
+    1.2
+   ],
+   "shape": "box",
+   "energy": [
+    "electrical",
+    "hydraulic"
+   ],
+   "kpis": {
+    "failures_12m": 12,
+    "mtbf_h": 728.3,
+    "mttr_h": 1.69,
+    "availability": 0.9977,
+    "open_orders": 1,
+    "last_preventive": "2026-09-28",
+    "next_preventive": "2026-10-29",
+    "top_modes": [
+     {
+      "mode": "Filtre colmaté",
+      "count": 6
+     },
+     {
+      "mode": "Température huile",
+      "count": 3
+     },
+     {
+      "mode": "Pompe",
+      "count": 3
+     }
+    ],
+    "status": "orange"
+   },
+   "history": [
+    {
+     "wo": 100298,
+     "date": "2026-09-30",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Filtre colmaté sur centrale hydraulique de bridage"
+    },
+    {
+     "wo": 100424,
+     "date": "2026-09-29",
+     "type": "CORRECTIVE",
+     "status": "OPEN",
+     "description": "Filtre colmaté sur centrale hydraulique de bridage"
+    },
+    {
+     "wo": 100322,
+     "date": "2026-09-28",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive centrale hydraulique de bridage"
+    },
+    {
+     "wo": 100321,
+     "date": "2026-08-27",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive centrale hydraulique de bridage"
+    },
+    {
+     "wo": 100297,
+     "date": "2026-08-09",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Filtre colmaté sur centrale hydraulique de bridage"
+    }
+   ]
+  },
+  {
+   "tag": "ARM",
+   "name": "Armoire électrique",
+   "kind": "cabinet",
+   "center": [
+    3.5,
+    -0.6,
+    1.0
+   ],
+   "size": [
+    1.2,
+    0.6,
+    2.0
+   ],
+   "shape": "box",
+   "energy": [
+    "electrical"
+   ],
+   "kpis": {
+    "failures_12m": 6,
+    "mtbf_h": 1459.0,
+    "mttr_h": 1.02,
+    "availability": 0.9993,
+    "open_orders": 1,
+    "last_preventive": "2026-09-19",
+    "next_preventive": "2026-12-11",
+    "top_modes": [
+     {
+      "mode": "Carte E/S",
+      "count": 5
+     },
+     {
+      "mode": "Ventilation armoire",
+      "count": 1
+     }
+    ],
+    "status": "orange"
+   },
+   "history": [
+    {
+     "wo": 100425,
+     "date": "2026-09-28",
+     "type": "CORRECTIVE",
+     "status": "OPEN",
+     "description": "Carte E/S sur armoire électrique"
+    },
+    {
+     "wo": 100342,
+     "date": "2026-09-19",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive armoire électrique"
+    },
+    {
+     "wo": 100341,
+     "date": "2026-06-28",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive armoire électrique"
+    },
+    {
+     "wo": 100333,
+     "date": "2026-04-17",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Carte E/S sur armoire électrique"
+    },
+    {
+     "wo": 100332,
+     "date": "2026-04-06",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Carte E/S sur armoire électrique"
+    }
+   ]
+  },
+  {
+   "tag": "WLD",
+   "name": "Générateurs de soudage",
+   "kind": "power",
+   "center": [
+    3.3,
+    1.6,
+    0.5
+   ],
+   "size": [
+    0.8,
+    0.7,
+    1.0
+   ],
+   "shape": "box",
+   "energy": [
+    "electrical"
+   ],
+   "kpis": {
+    "failures_12m": 9,
+    "mtbf_h": 972.4,
+    "mttr_h": 0.95,
+    "availability": 0.999,
+    "open_orders": 1,
+    "last_preventive": "2026-08-24",
+    "next_preventive": "2026-10-04",
+    "top_modes": [
+     {
+      "mode": "Refroidissement torche",
+      "count": 3
+     },
+     {
+      "mode": "Carte de commande",
+      "count": 3
+     },
+     {
+      "mode": "Dévidoir",
+      "count": 3
+     }
+    ],
+    "status": "orange"
+   },
+   "history": [
+    {
+     "wo": 100426,
+     "date": "2026-09-28",
+     "type": "CORRECTIVE",
+     "status": "OPEN",
+     "description": "Refroidissement torche sur générateurs de soudage"
+    },
+    {
+     "wo": 100376,
+     "date": "2026-08-24",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive générateurs de soudage"
+    },
+    {
+     "wo": 100359,
+     "date": "2026-08-10",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Dévidoir sur générateurs de soudage"
+    },
+    {
+     "wo": 100358,
+     "date": "2026-07-18",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Carte de commande sur générateurs de soudage"
+    },
+    {
+     "wo": 100375,
+     "date": "2026-07-13",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive générateurs de soudage"
+    }
+   ]
+  },
+  {
+   "tag": "FUM",
+   "name": "Aspiration des fumées",
+   "kind": "extraction",
+   "center": [
+    -3.3,
+    1.8,
+    1.2
+   ],
+   "size": [
+    0.9,
+    0.9,
+    2.4
+   ],
+   "shape": "cyl",
+   "energy": [
+    "electrical"
+   ],
+   "kpis": {
+    "failures_12m": 9,
+    "mtbf_h": 972.4,
+    "mttr_h": 0.9,
+    "availability": 0.9991,
+    "open_orders": 0,
+    "last_preventive": "2026-09-14",
+    "next_preventive": "2026-10-15",
+    "top_modes": [
+     {
+      "mode": "Filtre saturé",
+      "count": 4
+     },
+     {
+      "mode": "Débit insuffisant",
+      "count": 3
+     },
+     {
+      "mode": "Courroie ventilateur",
+      "count": 2
+     }
+    ],
+    "status": "green"
+   },
+   "history": [
+    {
+     "wo": 100399,
+     "date": "2026-09-20",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Filtre saturé sur aspiration des fumées"
+    },
+    {
+     "wo": 100422,
+     "date": "2026-09-14",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive aspiration des fumées"
+    },
+    {
+     "wo": 100398,
+     "date": "2026-08-26",
+     "type": "CORRECTIVE",
+     "status": "CLOSED",
+     "description": "Filtre saturé sur aspiration des fumées"
+    },
+    {
+     "wo": 100421,
+     "date": "2026-08-13",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive aspiration des fumées"
+    },
+    {
+     "wo": 100420,
+     "date": "2026-07-13",
+     "type": "PREVENTIVE",
+     "status": "CLOSED",
+     "description": "Visite préventive aspiration des fumées"
+    }
+   ]
+  }
+ ],
+ "procedures": [
+  {
+   "id": "P-R1-TORCH",
+   "title": "Remplacement de la buse et du tube contact, robot R1",
+   "equipment": "R1",
+   "duration_min": 20,
+   "skills": [
+    "mécanique"
+   ],
+   "steps": [
+    {
+     "tag": "R1",
+     "text": "Mettre le robot R1 en position de maintenance depuis le pupitre (programme MAINT).",
+     "minutes": 2
+    },
+    {
+     "tag": "ARM",
+     "text": "Consigner l'alimentation du robot R1 et du générateur : cadenas personnel sur le sectionneur Q12.",
+     "minutes": 3,
+     "lockout": [
+      "electrical"
+     ]
+    },
+    {
+     "tag": "R1",
+     "text": "Attendre le refroidissement de la torche (contrôle au thermomètre, moins de 40 °C).",
+     "minutes": 5,
+     "isolate": [
+      "electrical"
+     ]
+    },
+    {
+     "tag": "R1",
+     "text": "Dévisser la buse, remplacer le tube contact (réf. CT-1.2-M8) puis la buse (réf. BN-16).",
+     "minutes": 6,
+     "isolate": [
+      "electrical"
+     ]
+    },
+    {
+     "tag": "R1",
+     "text": "Contrôler le dépassement du tube (2 mm, gabarit G-02).",
+     "minutes": 2,
+     "isolate": [
+      "electrical"
+     ]
+    },
+    {
+     "tag": "ARM",
+     "text": "Déconsigner, lancer le cycle de test de soudure sur éprouvette.",
+     "minutes": 2
+    }
+   ]
+  },
+  {
+   "id": "P-HPU-FILTER",
+   "title": "Contrôle du niveau et remplacement du filtre de retour, centrale hydraulique",
+   "equipment": "HPU",
+   "duration_min": 35,
+   "skills": [
+    "hydraulique"
+   ],
+   "steps": [
+    {
+     "tag": "TT1",
+     "text": "Mettre la table tournante en position sûre, bridages ouverts.",
+     "minutes": 3
+    },
+    {
+     "tag": "HPU",
+     "text": "Consigner la centrale : sectionneur Q7 cadenassé, purger l'accumulateur (manomètre à 0 bar).",
+     "minutes": 6,
+     "lockout": [
+      "electrical",
+      "hydraulic"
+     ]
+    },
+    {
+     "tag": "HPU",
+     "text": "Relever le niveau d'huile et la température sur le voyant ; noter les valeurs.",
+     "minutes": 3,
+     "isolate": [
+      "electrical",
+      "hydraulic"
+     ]
+    },
+    {
+     "tag": "HPU",
+     "text": "Remplacer la cartouche du filtre de retour (réf. RF-10), contrôler le joint.",
+     "minutes": 12,
+     "isolate": [
+      "electrical",
+      "hydraulic"
+     ]
+    },
+    {
+     "tag": "HPU",
+     "text": "Compléter le niveau (HM 46) jusqu'au repère haut.",
+     "minutes": 5,
+     "isolate": [
+      "electrical",
+      "hydraulic"
+     ]
+    },
+    {
+     "tag": "HPU",
+     "text": "Déconsigner, démarrer la centrale, vérifier l'absence de fuite et la pression de service (120 bar).",
+     "minutes": 6
+    }
+   ]
+  },
+  {
+   "id": "P-CV1-BELT",
+   "title": "Recentrage de la bande, convoyeur d'entrée",
+   "equipment": "CV1",
+   "duration_min": 25,
+   "skills": [
+    "mécanique"
+   ],
+   "steps": [
+    {
+     "tag": "ARM",
+     "text": "Consigner le convoyeur CV1 : sectionneur Q3 cadenassé, vérifier l'absence de tension.",
+     "minutes": 4,
+     "lockout": [
+      "electrical"
+     ]
+    },
+    {
+     "tag": "CV1",
+     "text": "Mesurer le déport de bande aux deux extrémités (réglet).",
+     "minutes": 4,
+     "isolate": [
+      "electrical"
+     ]
+    },
+    {
+     "tag": "CV1",
+     "text": "Régler le tambour de renvoi par quarts de tour côté où la bande monte.",
+     "minutes": 8,
+     "isolate": [
+      "electrical"
+     ]
+    },
+    {
+     "tag": "CV1",
+     "text": "Contrôler la tension (flèche de 15 mm sous 5 kg au milieu).",
+     "minutes": 4,
+     "isolate": [
+      "electrical"
+     ]
+    },
+    {
+     "tag": "ARM",
+     "text": "Déconsigner, faire tourner 10 minutes à vide et recontrôler le centrage.",
+     "minutes": 5
+    }
+   ]
+  }
+ ]
+}

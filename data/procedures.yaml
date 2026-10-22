@@ -1,0 +1,42 @@
+# Step-by-step procedures shown in the 3D/AR view. Each step points at an equipment tag; the viewer
+# flies the camera to it and highlights it. 'isolate' lists the energies the step requires to be
+# isolated (lockout-tagout); the validator refuses a procedure that works on an energised equipment.
+# Content is illustrative: real procedures come from the maintenance method office.
+
+- id: P-R1-TORCH
+  title: Remplacement de la buse et du tube contact, robot R1
+  equipment: R1
+  duration_min: 20
+  skills: [mécanique]
+  steps:
+    - {tag: R1, text: "Mettre le robot R1 en position de maintenance depuis le pupitre (programme MAINT).", minutes: 2}
+    - {tag: ARM, text: "Consigner l'alimentation du robot R1 et du générateur : cadenas personnel sur le sectionneur Q12.", minutes: 3, lockout: [electrical]}
+    - {tag: R1, text: "Attendre le refroidissement de la torche (contrôle au thermomètre, moins de 40 °C).", minutes: 5, isolate: [electrical]}
+    - {tag: R1, text: "Dévisser la buse, remplacer le tube contact (réf. CT-1.2-M8) puis la buse (réf. BN-16).", minutes: 6, isolate: [electrical]}
+    - {tag: R1, text: "Contrôler le dépassement du tube (2 mm, gabarit G-02).", minutes: 2, isolate: [electrical]}
+    - {tag: ARM, text: "Déconsigner, lancer le cycle de test de soudure sur éprouvette.", minutes: 2}
+
+- id: P-HPU-FILTER
+  title: Contrôle du niveau et remplacement du filtre de retour, centrale hydraulique
+  equipment: HPU
+  duration_min: 35
+  skills: [hydraulique]
+  steps:
+    - {tag: TT1, text: "Mettre la table tournante en position sûre, bridages ouverts.", minutes: 3}
+    - {tag: HPU, text: "Consigner la centrale : sectionneur Q7 cadenassé, purger l'accumulateur (manomètre à 0 bar).", minutes: 6, lockout: [electrical, hydraulic]}
+    - {tag: HPU, text: "Relever le niveau d'huile et la température sur le voyant ; noter les valeurs.", minutes: 3, isolate: [electrical, hydraulic]}
+    - {tag: HPU, text: "Remplacer la cartouche du filtre de retour (réf. RF-10), contrôler le joint.", minutes: 12, isolate: [electrical, hydraulic]}
+    - {tag: HPU, text: "Compléter le niveau (HM 46) jusqu'au repère haut.", minutes: 5, isolate: [electrical, hydraulic]}
+    - {tag: HPU, text: "Déconsigner, démarrer la centrale, vérifier l'absence de fuite et la pression de service (120 bar).", minutes: 6}
+
+- id: P-CV1-BELT
+  title: Recentrage de la bande, convoyeur d'entrée
+  equipment: CV1
+  duration_min: 25
+  skills: [mécanique]
+  steps:
+    - {tag: ARM, text: "Consigner le convoyeur CV1 : sectionneur Q3 cadenassé, vérifier l'absence de tension.", minutes: 4, lockout: [electrical]}
+    - {tag: CV1, text: "Mesurer le déport de bande aux deux extrémités (réglet).", minutes: 4, isolate: [electrical]}
+    - {tag: CV1, text: "Régler le tambour de renvoi par quarts de tour côté où la bande monte.", minutes: 8, isolate: [electrical]}
+    - {tag: CV1, text: "Contrôler la tension (flèche de 15 mm sous 5 kg au milieu).", minutes: 4, isolate: [electrical]}
+    - {tag: ARM, text: "Déconsigner, faire tourner 10 minutes à vide et recontrôler le centrage.", minutes: 5}

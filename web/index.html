@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maintenance 3D / RA : cellule de soudure</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+  </script>
+</head>
+<body>
+  <div id="viewer"></div>
+
+  <header id="top">
+    <strong id="title">Maintenance 3D</strong>
+    <input id="search" placeholder="Repère ou équipement (ex. R1, centrale)" autocomplete="off">
+    <button id="measure" title="Mesurer une distance entre deux points du nuage">Mesurer</button>
+    <button id="export" title="Exporter le journal de session pour l'évaluation">Journal</button>
+    <span id="xr"></span>
+  </header>
+
+  <aside id="panel" hidden>
+    <button id="close" aria-label="Fermer">×</button>
+    <div id="panel-body"></div>
+  </aside>
+
+  <section id="steps" hidden>
+    <div id="step-head"></div>
+    <p id="step-text"></p>
+    <div id="step-meta"></div>
+    <div class="row">
+      <button id="prev">Précédent</button>
+      <button id="next" class="primary">Étape suivante</button>
+      <button id="stop">Quitter</button>
+    </div>
+  </section>
+
+  <div id="legend">
+    <span><i class="dot green"></i>RAS</span>
+    <span><i class="dot orange"></i>OT ouvert ou disponibilité &lt; 99,8 %</span>
+    <span><i class="dot red"></i>Pannes répétitives (20 et plus sur 12 mois)</span>
+  </div>
+  <div id="toast" hidden></div>
+  <div id="loading">Chargement du nuage de points…</div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
